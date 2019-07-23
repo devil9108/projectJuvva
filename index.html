@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juvva game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="imageDisplay"></div>
+
+    <div class="dice1">
+        <h2>Player - 1</h2>
+        <button id="btn1">Press</button>
+        <h3 id="p1"></h3>
+    </div>
+
+    <div class="main">
+        <div class="player1">
+            <div class="coins" id="r0">
+                <div class="coinr" id ="c0" draggable="false"></div>
+            </div>
+            <div class="coins" id="r1">
+                <div class="coinr" id="c1" draggable="false"></div>
+            </div>
+            <div class="coins" id="r2">
+                <div class="coinr" id="c2" draggable="false"></div>
+            </div>
+            <div class="coins" id="r3">
+                <div class="coinr" id="c3" draggable="false"></div>
+            </div>
+            <div class="coins" id="r4">
+                <div class="coinr" id="c4" draggable="false"></div>
+            </div>
+            <div class="coins" id="r5">
+                <div class="coinr" id="c5" draggable="false"></div>
+            </div>
+            <div class="coins" id="r6">
+                <div class="coinr" id="c6" draggable="false"></div>
+            </div>
+            <div class="coins" id="r7">
+                <div class="coinr" id="c7" draggable="false"></div>
+            </div>
+        </div>
+        <div class="line">
+            <div id="b01" class="box safe"></div>
+            <div id="b02" class="box"></div>
+            <div id="b03" class="box pathL"></div>
+            <div id="b04" class="box"></div>
+            <div id="b05" class="box safe"></div>
+            <div id="b06" class="box"></div>
+            <div id="b07" class="box pathL"></div>
+            <div id="b08" class="box"></div>
+            <div id="b09" class="box safe"></div>
+        </div>
+        <div class="line">
+            <div id="b10" class="box"></div>
+            <div id="b11" class="box safe"></div>
+            <div id="b12" class="box"></div>
+            <div id="b13" class="box"></div>
+            <div id="b14" class="box pathRr"></div>
+            <div id="b15" class="box"></div>
+            <div id="b16" class="box pathR"></div>
+            <div id="b17" class="box safe"></div>
+            <div id="b18" class="box"></div>
+        </div>
+        <div class="line">
+            <div id="b19" class="box pathB"></div>
+            <div id="b20" class="box"></div>
+            <div id="b21" class="box safe"></div>
+            <div id="b22" class="box"></div>
+            <div id="b23" class="box"></div>
+            <div id="b24" class="box pathR"></div>
+            <div id="b25" class="box safe"></div>
+            <div id="b26" class="box"></div>
+            <div id="b27" class="box pathT"></div>
+        </div>
+        <div class="line">
+            <div id="b28" class="box"></div>
+            <div id="b29" class="box"></div>
+            <div id="b30" class="box"></div>
+            <div id="b31" class="box"></div>
+            <div id="b32" class="box safe"></div>
+            <div id="b33" class="box"></div>
+            <div id="b34" class="box"></div>
+            <div id="b35" class="box"></div>
+            <div id="b36" class="box"></div>
+        </div>
+        <div class="line">
+            <div id="b37" class="box safe"></div>
+            <div id="b38" class="box pathT"></div>
+            <div id="b39" class="box"></div>
+            <div id="b40" class="box safe"></div>
+            <div id="b41" class="box win"></div>
+            <div id="b42" class="box safe"></div>
+            <div id="b43" class="box"></div>
+            <div id="b44" class="box pathB"></div>
+            <div id="b45" class="box safe"></div>
+        </div>
+        <div class="line">
+            <div id="b46" class="box"></div>
+            <div id="b47" class="box"></div>
+            <div id="b48" class="box"></div>
+            <div id="b49" class="box"></div>
+            <div id="b50" class="box safe"></div>
+            <div id="b51" class="box"></div>
+            <div id="b52" class="box"></div>
+            <div id="b53" class="box"></div>
+            <div id="b54" class="box"></div>
+        </div>
+        <div class="line">
+            <div id="b55" class="box pathB"></div>
+            <div id="b56" class="box"></div>
+            <div id="b57" class="box safe"></div>
+            <div id="b58" class="box  pathG"></div>
+            <div id="b59" class="box"></div>
+            <div id="b60" class="box"></div>
+            <div id="b61" class="box safe"></div>
+            <div id="b62" class="box"></div>
+            <div id="b63" class="box pathT"></div>
+        </div>
+        <div class="line">
+            <div id="b64" class="box"></div>
+            <div id="b65" class="box safe"></div>
+            <div id="b66" class="box pathG"></div>
+            <div id="b67" class="box"></div>
+            <div id="b68" class="box pathL"></div>
+            <div id="b69" class="box"></div>
+            <div id="b70" class="box"></div>
+            <div id="b71" class="box safe"></div>
+            <div id="b72" class="box"></div>
+        </div>
+        <div class="line">
+            <div id="b73" class="box safe"></div>
+            <div id="b74" class="box"></div>
+            <div id="b75" class="box pathRr"></div>
+            <div id="b76" class="box"></div>
+            <div id="b77" class="box safe"></div>
+            <div id="b78" class="box"></div>
+            <div id="b79" class="box pathRr"></div>
+            <div id="b80" class="box"></div>
+            <div id="b81" class="box safe"></div>
+        </div>
+        <div class="player2">
+            <div class="coins" id="g0">
+                <div class="coing" id="d0" draggable="false"></div>
+            </div>
+            <div class="coins" id="g1">
+                <div class="coing" id="d1" draggable="false"></div>
+            </div>
+            <div class="coins" id="g2">
+                <div class="coing" id="d2" draggable="false"></div>
+            </div>
+            <div class="coins" id="g3">
+                <div class="coing" id="d3" draggable="false"></div>
+            </div>
+            <div class="coins" id="g4">
+                <div class="coing" id="d4" draggable="false"></div>
+            </div>
+            <div class="coins" id="g5">
+                <div class="coing" id="d5" draggable="false"></div>
+            </div>
+            <div class="coins" id="g6">
+                <div class="coing" id="d6" draggable="false"></div>
+            </div>
+            <div class="coins" id="g7">
+                <div class="coing" id="d7" draggable="false"></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="dice2">
+        <h2>Player - 2</h2>
+        <button id="btn2" disabled>Press</button>
+        <h3 id="p2"></h3>
+    </div>
+
+    
+    <script src="juvva.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+</body>
+</html>

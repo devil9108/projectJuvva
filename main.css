@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right bottom,#f38a018f,#0eeb7279);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+   
+}
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line{
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 500px;
+    margin: 0px auto;
+}
+
+h3{
+    text-align: center;
+    font-family: 'viga', sans-serif;
+    font-size: 30px;
+    color: rgb(21, 37, 250);
+    
+}
+
+.box{
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    width: 52px;
+    height: 50px;
+    margin: -2px;
+    padding: 0px;
+}
+
+.safe{
+    position: relative;
+}
+
+.safe::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 54px;
+    height: 52px;
+    top: -2px;
+    left: -2px;
+    background-color: black;
+    clip-path: polygon(5% 0, 0 5%, 45% 50%, 0 95%, 5% 100%, 50% 55%, 95% 100%, 100% 95%, 55% 50%, 100% 5%, 95% 0, 50% 45%);
+    z-index: 0;
+}
+
+.player1,.player2{
+    margin: 30px auto;
+    height: 40px;
+    width: 450px;
+
+}
+
+.dice1,.dice2{
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    
+}
+
+.coins{
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    width: 52px;
+    height: 50px;
+    margin: -2px;
+    padding: 0px;
+}
+
+.coinr{
+    background-image: url(images/7630.jpg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 9px;
+    position: absolute;
+}
+
+.coing{
+    background-image: url(images/7636.jpg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 9px;
+    position: absolute;
+}
+
+.half{
+    float: left;
+    background-size: 20px!important;
+    border-radius: 50%;
+    height: 20px!important;
+    width: 20px!important;
+    cursor: pointer!important;
+    margin: 3px auto!important;
+    position: relative;
+}
+
+button{
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    margin: 20px auto;
+    border: none;
+    font-size: 25px;
+    outline: none;
+    border-radius: 7px;
+    padding: 0px;
+    color: white;
+}
+
+button:enabled{
+    height: 40px;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
+    transition: ease-in .5s;
+}
+#btn1{
+    background-color: rgba(134, 4, 4, 0.747);
+}
+#btn2{
+    background-color: rgba(5, 175, 5, 0.658);
+}
+button:enabled:hover{
+    height: 40px;
+    transform: translate(0px,-2px);
+    transition: none;
+    padding: 4px;
+    box-shadow: 4px 4px 15px rgb(0, 0, 0);
+}
+
+button:enabled:active{
+    transform: translate(0px,2px);
+    box-shadow: 2px 2px 8px black;
+}
+
+button:disabled{
+    cursor: default;
+    color: gray;
+    background-color: rgba(128, 128, 128, 0.281)!important;
+    transition: ease-out .5s;
+}
+
+h2{
+    text-align: center;
+    font-family: 'viga', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
+}
+
+.dice1>h2{
+    color: red;
+
+}
+
+.dice2>h2{
+    color: green;
+}
+
+
+.invisible{
+    display: none;
+}
+
+.fillr{
+    background-color: red;
+    opacity: 0.5;
+}
+.fillg{
+    background-color: green;
+    opacity: 0.5;
+}
+
+.pedhaJuvvaR{
+    background-image: url('/images/pedhaJuvvaR.png');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    border-radius: 0px;
+    height: 45px;
+    width: 45px;
+    margin: 2.5px;
+}
+
+.pedhaJuvvaG{
+    background-image: url('/images/pedhaJuvvaG.png');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    border-radius: 0px;
+    height: 45px;
+    width: 45px;
+    margin: 2.5px;
+}
+
+.chinnaJuvvaR{
+    background-image: url('/images/chinnaJuvvaR.png');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    border-radius: 0px;
+    height: 45px;
+    width: 45px;
+    margin: 2.5px;
+}
+
+.chinnaJuvvaG{
+    background-image: url('/images/chinnaJuvvaG.png');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    border-radius: 0px;
+    height: 45px;
+    width: 45px;
+    margin: 2.5px;
+}
+
+.pathL{
+    position: relative;
+}
+.pathL::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    -webkit-clip-path: polygon(40% 20%, 40% 40%, 100% 40%, 100% 60%, 40% 60%, 40% 80%, 0% 50%);
+    clip-path: polygon(40% 20%, 40% 40%, 100% 40%, 100% 60%, 40% 60%, 40% 80%, 0% 50%);
+    top : 8px;
+    left: 8px;
+}
+
+.pathRr{
+    position: relative;
+}
+.pathRr::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    -webkit-clip-path: polygon(40% 20%, 40% 40%, 100% 40%, 100% 60%, 40% 60%, 40% 80%, 0% 50%);
+    clip-path: polygon(40% 20%, 40% 40%, 100% 40%, 100% 60%, 40% 60%, 40% 80%, 0% 50%);
+    transform: rotate(180deg);
+    top : 8px;
+    left: 8px;
+}
+
+.pathB{
+    position: relative;
+}
+.pathB::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-clip-path: polygon(40% 20%, 40% 40%, 100% 40%, 100% 60%, 40% 60%, 40% 80%, 0% 50%);
+    clip-path: polygon(40% 20%, 40% 40%, 100% 40%, 100% 60%, 40% 60%, 40% 80%, 0% 50%);
+    transform: rotate(270deg);
+    top : 8px;
+    left: 8px;
+}
+
+.pathT{
+    position: relative;
+}
+.pathT::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    -webkit-clip-path: polygon(40% 20%, 40% 40%, 100% 40%, 100% 60%, 40% 60%, 40% 80%, 0% 50%);
+    clip-path: polygon(40% 20%, 40% 40%, 100% 40%, 100% 60%, 40% 60%, 40% 80%, 0% 50%);
+    transform: rotate(90deg);
+    top : 8px;
+    left: 8px;
+}
+.pathR{
+    position: relative;
+}
+.pathR::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.5);
+    clip-path: polygon(0 50%, 15% 25%, 15% 45%, 35% 45%, 35% 20%, 45% 20%, 45% 45%, 40% 55%, 15% 55%, 15% 75%);
+    transform: rotate(270deg);
+    top : -2px;
+    left: 8px;
+}
+.pathG{
+    position: relative;
+}
+.pathG::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(1, 41, 1, 0.5);
+    clip-path: polygon(0 50%, 15% 25%, 15% 45%, 35% 45%, 35% 20%, 45% 20%, 45% 45%, 40% 55%, 15% 55%, 15% 75%);
+    transform: rotate(90deg);
+    top : 15px;
+    left: 4px;
+}
+
+.win{
+    position: relative;
+}
+.win::before{
+    content: "WIN";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: block;
+    font-family: 'Permanent marker';
+    transform: rotate(325deg);
+    right: -12px;
+    top: 5px;
+    color: slateblue;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    opacity: .5;
+}
+
+.imageDisplay{
+    position: absolute;
+    background-image: url('');
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+    left : 25px;
+    bottom: 25px;
+}
